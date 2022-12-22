@@ -1,0 +1,48 @@
+- name: golang setup playbook
+  become: true
+  hosts: all
+  tasks:
+    - name: install golang
+      ansible.builtin.yum:
+        name: golang
+        state: present
+
+    - name: initiate go module
+      ansible.builtin.command: go mod init all
+
+    - name: get go package
+      ansible.builtin.command: go get "github.com/aws/aws-sdk-go/aws"
+
+    - name: get go package
+      ansible.builtin.command: go get "github.com/aws/aws-sdk-go/aws/session"
+
+    - name: get go package
+      ansible.builtin.command: go get "github.com/aws/aws-sdk-go/service/dynamodb"
+
+    - name: get go package
+      ansible.builtin.command: go get "github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
+    
+    - name: get go package
+      ansible.builtin.command: go get "github.com/jmespath/go-jmespath"
+
+    - name: copy file to target
+      ansible.builtin.copy:
+        src: /home/ec2-user/logic.go
+        dest: /home/ec2-user/logic.go
+    
+    - name: copy file to target
+      ansible.builtin.copy:
+        src: /home/ec2-user/deleteTableItem.go
+        dest: /home/ec2-user/deleteTableItem.go
+    
+    - name: copy file to target
+      ansible.builtin.copy:
+        src: /home/ec2-user/getTableItem.go
+        dest: /home/ec2-user/getTableItem.go
+    
+    - name: copy file to target
+      ansible.builtin.copy:
+        src: /home/ec2-user/putTableItem.go
+        dest: /home/ec2-user/putTableItem.go
+  
+    
