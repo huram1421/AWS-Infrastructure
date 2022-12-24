@@ -3,7 +3,7 @@ Architected and deployed a Golang RESTful micro-service cloud-based infrastructu
 
 ![Blank diagram](https://user-images.githubusercontent.com/121128779/209437315-b0fae1f6-8dea-4982-b937-d76e646d712e.png)
 ![Blank board](https://user-images.githubusercontent.com/121128779/209437319-c9e119af-6fac-4aec-813c-bb45e9e8c291.png)
-<img width="607" alt="Screen Shot 2022-12-18 at 9 32 17 PM" src="https://user-images.githubusercontent.com/121128779/209437336-2eb36300-d46d-4d21-9d60-0b597c53b9ba.png">
+
 
 
 <body><article id="c633a81e-a6e6-46b2-b6d7-c5291f19dd7b" class="page sans"><header><h1 class="page-title">readme</h1></header><div class="page-body"><p id="ccdd4e1d-e1c1-46c4-b95f-3d2197b08d69" class="">
